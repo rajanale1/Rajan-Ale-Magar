@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rajan Ale Magar | Resume</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet" />
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll('a[href^="#"]').forEach(link => {
+        link.addEventListener("click", e => {
+          e.preventDefault();
+          document.querySelector(link.getAttribute("href")).scrollIntoView({
+            behavior: "smooth"
+          });
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <header class="mobile-header">
+    <div class="mobile-profile">
+      <strong>Rajan Ale Magar</strong> — IT Student
+    </div>
+    <nav class="mobile-nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section class="profile-top">
+      <img src="profile.jpg" alt="Rajan Ale Magar" />
+      <h1>Rajan Ale Magar</h1>
+      <p>IT Student at Skyline Higher Education AU</p>
+    </section>
+
+    <section id="about">
+      <h2> About Me</h2>
+      <p>Hi! I'm Rajan, an IT student passionate about front-end development. I enjoy building interactive web applications and learning new technologies.</p>
+    </section>
+
+    <section id="skills">
+      <h2> Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> HTML, CSS, JavaScript, Python</li>
+        <li><strong>Tools:</strong>Python, VS Code</li>
+        <li><strong>Soft Skills:</strong> Teamwork, Communication, Time Management</li>
+      </ul>
+    </section>
+
+    <section id="education">
+      <h2> Education & Experience</h2>
+      <p><strong>Skyline Higher Education AU</strong> – Bachelor of IT (2024 – Present)</p>
+      <p><strong>El Jannah</strong> – Waiter & Fryer (2023 – 2024)</p>
+    </section>
+
+    <section id="projects">
+      <h2> Projects</h2>
+      <ul>
+        <li><strong>Restaurant Discount Program:</strong> A Python-based discount calculator.</li>
+        <li><strong>Resume Website:</strong> This responsive portfolio site built with HTML/CSS.</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2> Contact Me</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <div class="contact-links">
+        <p>📧 <a href="mailto:rajanale120@gmail.com">rajanale120@gmail.com</a></p>
+        <p>🔗 <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn Profile</a></p>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Rajan Ale Magar</p>
+    </footer>
+  </main>
+</body>
+</html>

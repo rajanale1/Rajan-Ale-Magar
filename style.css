@@ -1,0 +1,158 @@
+:root {
+  --primary: #0a192f;
+  --accent: #64ffda;
+  --bg-light: #f5f7fa;
+  --text: #1a1a1a;
+  --gray: #555;
+}
+
+body {
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* === MOBILE HEADER === */
+.mobile-header {
+  background: var(--primary);
+  color: white;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.mobile-profile {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.mobile-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.mobile-nav a {
+  color: var(--accent);
+  font-weight: bold;
+}
+
+/* === MAIN CONTENT === */
+.content {
+  padding: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.profile-top {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.profile-top img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.3rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  color: var(--primary);
+  border-bottom: 2px solid var(--accent);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+/* === CONTACT FORM === */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  max-width: 500px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  min-height: 100px;
+}
+
+.contact-form button {
+  padding: 0.8rem;
+  border: none;
+  background: var(--accent);
+  color: var(--primary);
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #52e0c4;
+}
+
+.contact-links {
+  margin-top: 1rem;
+}
+
+.contact-links a {
+  font-weight: bold;
+  color: var(--primary);
+}
+
+/* === FOOTER === */
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: var(--gray);
+}
+
+/* === TABLET & DESKTOP === */
+@media (min-width: 768px) {
+  .mobile-nav {
+    gap: 2rem;
+  }
+  .profile-top img {
+    width: 140px;
+    height: 140px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+}
